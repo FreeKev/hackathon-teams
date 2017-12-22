@@ -5,8 +5,10 @@
 	<p>
 	  <%= team.members %>
 	</p>
-	<!-- <a href="/teams/<%= team.id %>" class="btn btn-danger delete-link"> -->
 		<a href="/teams/<%= team.name %>" class="btn btn-danger delete-link">
-		Delete post
+		Delete
+	</a>
+	<a href="/teams/edit/<%= team.name %>" class="btn btn-danger edit-link">
+		Edit 
 	</a>
 </div>

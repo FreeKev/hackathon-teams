@@ -1,0 +1,14 @@
+<div>
+<h2><%= team.name %> Edit Team</h2>   
+<form class="edit-form" action="/teams/<%= team.name %>" id="put-form">
+    <div class="form-group">
+        <label for="teamName">Team Name</label>
+        <input id="new-name" type="text" name="name" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="teamMembers">Team Members</label>
+        <input id="members" type="text" name="members" class="form-control">
+    </div>  
+    <input type="submit" value="Update a team">
+  </form>
+</div>
