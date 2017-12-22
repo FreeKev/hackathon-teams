@@ -14,6 +14,11 @@ router.post('/', function(req, res) {
   res.redirect('/teams');
 });
 
+router.delete('/:name', function(req, res) {
+  teamService.deleteTeam(req.params.name);
+  res.send({message: 'success'});
+});
+
 router.get('/new', function(req, res) {
   res.render('teams/new');
 });
